@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TSCN/HUD.gd" type="Script" id=1]
+[ext_resource path="res://front/chiness.tres" type="DynamicFont" id=2]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 148.555
+margin_top = 119.089
+margin_right = 512.555
+margin_bottom = 254.089
+custom_fonts/font = ExtResource( 2 )
+text = "圆球战争"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 261.04
+margin_top = 314.635
+margin_right = 400.04
+margin_bottom = 381.635
+custom_fonts/font = ExtResource( 2 )
+text = "开始游戏"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
